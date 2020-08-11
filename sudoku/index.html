@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <title>Sudoku</title>
+  <link rel="icon" href="img/logo.png" type="image/png" sizes="16x16">
+</head>
+
+<body>
+  <!--sudoku style-->
+  <div class="banner container-fluid">
+    <div class="row justify-content-center">
+      <img src="img/unnamed.png" class="bannerImg">
+    </div>
+  </div>
+
+  <!--sudoku main grid view-->
+  <div class="SudokuMainContainer container-fluid">
+    <div class="boxesHolder container-fluid">
+      <!--boxes top row================================-->
+      <div class="row boxesRow">
+        <!--BOX 1-->
+        <div class="col-4">
+          <div class="SecondaryBox boxTopLeft topBox container-fluid">
+            <!--ROW A-->
+            <div class="rowA row">
+              <input type="text" maxlength="1" onkeypress="return isNumberKey(event)" class="inputBox col-4" id="A1" onchange="textInputColor()">
+              <input type="text" maxlength="1" onkeypress="return isNumberKey(event)" class="inputBox col-4" id="A2" onchange="textInputColor()">
+              <input type="text" maxlength="1" onkeypress="return isNumberKey(event)" class="inputBox col-4" id="A3" onchange="textInputColor()">
+            </div>
+            <div class="rowB row">
+              <!--ROW B-->
+              <input type="text" maxlength="1" onkeypress="return isNumberKey(event)" class="inputBox col-4" id="B1" onchange="textInputColor()">
+              <input type="text" maxlength="1" onkeypress="return isNumberKey(event)" class="inputBox col-4" id="B2" onchange="textInputColor()">
+              <input type="text" maxlength="1" onkeypress="return isNumberKey(event)" class="inputBox col-4" id="B3" onchange="textInputColor()">
+            </div>
+            <div class="rowC row">
+              <!--ROW C-->
+              <input type="text" maxlength="1" onkeypress="return isNumberKey(event)" class="inputBox col-4" id="C1" onchange="textInputColor()">
+              <input type="text" maxlength="1" onkeypress="return isNumberKey(event)" class="inputBox col-4" id="C2" onchange="textInputColor()">
+              <input type="text" maxlength="1" onkeypress="return isNumberKey(event)" class="inputBox col-4" id="C3" onchange="textInputColor()">
+            </div>
+          </div>
+        </div>
+        <!--BOX 2-->
+        <div class="col-4">
+          <div class="SecondaryBox boxTopLeft topBox container-fluid">
+            <!--ROW A-->
+            <div class="rowA row">
+              <input type="text" maxlength="1" onkeypress="return isNumberKey(event)" class="inputBox col-4" id="A4" onchange="textInputColor()">
+              <input type="text" maxlength="1" onkeypress="return isNumberKey(event)" class="inputBox col-4" id="A5" onchange="textInputColor()">
+              <input type="text" maxlength="1" onkeypress="return isNumberKey(event)" class="inputBox col-4" id="A6" onchange="textInputColor()">
+            </div>
+            <div class="rowB row">
+              <!--ROW B-->
+              <input type="text" maxlength="1" onkeypress="return isNumberKey(event)" class="inputBox col-4" id="B4" onchange="textInputColor()">
+              <input type="text" maxlength="1" onkeypress="return isNumberKey(event)" class="inputBox col-4" id="B5" onchange="textInputColor()">
+              <input type="text" maxlength="1" onkeypress="return isNumberKey(event)" class="inputBox col-4" id="B6" onchange="textInputColor()">
+            </div>
+            <div class="rowC row">
+              <!--ROW C-->
+              <input type="text" maxlength="1" onkeypress="return isNumberKey(event)" class="inputBox col-4" id="C4" onchange="textInputColor()">
+              <input type="text" maxlength="1" onkeypress="return isNumberKey(event)" class="inputBox col-4" id="C5" onchange="textInputColor()">
+              <input type="text" maxlength="1" onkeypress="return isNumberKey(event)" class="inputBox col-4" id="C6" onchange="textInputColor()">
+            </div>
+          </div>
+        </div>
+        <!--BOX 3-->
+        <div class="col-4">
+          <div class="SecondaryBox boxTopLeft topBox container-fluid">
+            <!--ROW A-->
+            <div class="rowA row">
+              <input type="text" maxlength="1" onkeypress="return isNumberKey(event)" class="inputBox col-4" id="A7" onchange="textInputColor()">
+              <input type="text" maxlength="1" onkeypress="return isNumberKey(event)" class="inputBox col-4" id="A8" onchange="textInputColor()">
+              <input type="text" maxlength="1" onkeypress="return isNumberKey(event)" class="inputBox col-4" id="A9" onchange="textInputColor()">
+            </div>
+            <div class="rowB row">
+              <!--ROW B-->
+              <input type="text" maxlength="1" onkeypress="return isNumberKey(event)" class="inputBox col-4" id="B7" onchange="textInputColor()">
+              <input type="text" maxlength="1" onkeypress="return isNumberKey(event)" class="inputBox col-4" id="B8" onchange="textInputColor()">
+              <input type="text" maxlength="1" onkeypress="return isNumberKey(event)" class="inputBox col-4" id="B9" onchange="textInputColor()">
+            </div>
+            <div class="rowC row">
+              <!--ROW C-->
+              <input type="text" maxlength="1" onkeypress="return isNumberKey(event)" class="inputBox col-4" id="C7" onchange="textInputColor()">
+              <input type="text" maxlength="1" onkeypress="return isNumberKey(event)" class="inputBox col-4" id="C8" onchange="textInputColor()">
+              <input type="text" maxlength="1" onkeypress="return isNumberKey(event)" class="inputBox col-4" id="C9" onchange="textInputColor()">
+            </div>
+          </div>
+        </div>
+        <!--END OF BOXES TOP ROW================================-->
+      </div>
+      <!--BOXES MIDDLE ROW================================-->
+      <div class="row boxesRow">
+        <!--BOX 1-->
+        <div class="col-4">
+          <div class="SecondaryBox boxTopLeft topBox container-fluid">
+            <!--ROW A-->
+            <div class="rowA row">
+              <input type="text" maxlength="1" onkeypress="return isNumberKey(event)" class="inputBox col-4" id="D1" onchange="textInputColor()">
+              <input type="text" maxlength="1" onkeypress="return isNumberKey(event)" class="inputBox col-4" id="D2" onchange="textInputColor()">
+              <input type="text" maxlength="1" onkeypress="return isNumberKey(event)" class="inputBox col-4" id="D3" onchange="textInputColor()">
+            </div>
+            <div class="rowB row">
+              <!--ROW B-->
+              <input type="text" maxlength="1" onkeypress="return isNumberKey(event)" class="inputBox col-4" id="E1" onchange="textInputColor()">
+              <input type="text" maxlength="1" onkeypress="return isNumberKey(event)" class="inputBox col-4" id="E2" onchange="textInputColor()">
+              <input type="text" maxlength="1" onkeypress="return isNumberKey(event)" class="inputBox col-4" id="E3" onchange="textInputColor()">
+            </div>
+            <div class="rowC row">
+              <!--ROW C-->
+              <input type="text" maxlength="1" onkeypress="return isNumberKey(event)" class="inputBox col-4" id="F1" onchange="textInputColor()">
+              <input type="text" maxlength="1" onkeypress="return isNumberKey(event)" class="inputBox col-4" id="F2" onchange="textInputColor()">
+              <input type="text" maxlength="1" onkeypress="return isNumberKey(event)" class="inputBox col-4" id="F3" onchange="textInputColor()">
+            </div>
+          </div>
+        </div>
+        <!--BOX 2-->
+        <div class="col-4">
+          <div class="SecondaryBox boxTopLeft topBox container-fluid">
+            <!--ROW A-->
+            <div class="rowA row">
+              <input type="text" maxlength="1" onkeypress="return isNumberKey(event)" class="inputBox col-4" id="D4" onchange="textInputColor()">
+              <input type="text" maxlength="1" onkeypress="return isNumberKey(event)" class="inputBox col-4" id="D5" onchange="textInputColor()">
+              <input type="text" maxlength="1" onkeypress="return isNumberKey(event)" class="inputBox col-4" id="D6" onchange="textInputColor()">
+            </div>
+            <div class="rowB row">
+              <!--ROW B-->
+              <input type="text" maxlength="1" onkeypress="return isNumberKey(event)" class="inputBox col-4" id="E4" onchange="textInputColor()">
+              <input type="text" maxlength="1" onkeypress="return isNumberKey(event)" class="inputBox col-4" id="E5" onchange="textInputColor()">
+              <input type="text" maxlength="1" onkeypress="return isNumberKey(event)" class="inputBox col-4" id="E6" onchange="textInputColor()">
+            </div>
+            <div class="rowC row">
+              <!--ROW C-->
+              <input type="text" maxlength="1" onkeypress="return isNumberKey(event)" class="inputBox col-4" id="F4" onchange="textInputColor()">
+              <input type="text" maxlength="1" onkeypress="return isNumberKey(event)" class="inputBox col-4" id="F5" onchange="textInputColor()">
+              <input type="text" maxlength="1" onkeypress="return isNumberKey(event)" class="inputBox col-4" id="F6" onchange="textInputColor()">
+            </div>
+          </div>
+        </div>
+        <!--BOX 3-->
+        <div class="col-4">
+          <div class="SecondaryBox boxTopLeft topBox container-fluid">
+            <!--ROW A-->
+            <div class="rowA row">
+              <input type="text" maxlength="1" onkeypress="return isNumberKey(event)" class="inputBox col-4" id="D7" onchange="textInputColor()">
+              <input type="text" maxlength="1" onkeypress="return isNumberKey(event)" class="inputBox col-4" id="D8" onchange="textInputColor()">
+              <input type="text" maxlength="1" onkeypress="return isNumberKey(event)" class="inputBox col-4" id="D9" onchange="textInputColor()">
+            </div>
+            <div class="rowB row">
+              <!--ROW B-->
+              <input type="text" maxlength="1" onkeypress="return isNumberKey(event)" class="inputBox col-4" id="E7" onchange="textInputColor()">
+              <input type="text" maxlength="1" onkeypress="return isNumberKey(event)" class="inputBox col-4" id="E8" onchange="textInputColor()">
+              <input type="text" maxlength="1" onkeypress="return isNumberKey(event)" class="inputBox col-4" id="E9" onchange="textInputColor()">
+            </div>
+            <div class="rowC row">
+              <!--ROW C-->
+              <input type="text" maxlength="1" onkeypress="return isNumberKey(event)" class="inputBox col-4" id="F7" onchange="textInputColor()">
+              <input type="text" maxlength="1" onkeypress="return isNumberKey(event)" class="inputBox col-4" id="F8" onchange="textInputColor()">
+              <input type="text" maxlength="1" onkeypress="return isNumberKey(event)" class="inputBox col-4" id="F9" onchange="textInputColor()">
+            </div>
+          </div>
+        </div>
+        <!--END OF BOXES MIDDLE ROW=====================-->
+      </div>
+      <!--BOXES BOTTOM ROW================================-->
+      <div class="row boxesRow">
+        <!--BOX 1-->
+        <div class="col-4">
+          <div class="SecondaryBox boxTopLeft topBox container-fluid">
+            <!--ROW A-->
+            <div class="rowA row">
+              <input type="text" maxlength="1" onkeypress="return isNumberKey(event)" class="inputBox col-4" id="G1" onchange="textInputColor()">
+              <input type="text" maxlength="1" onkeypress="return isNumberKey(event)" class="inputBox col-4" id="G2" onchange="textInputColor()">
+              <input type="text" maxlength="1" onkeypress="return isNumberKey(event)" class="inputBox col-4" id="G3" onchange="textInputColor()">
+            </div>
+            <div class="rowB row">
+              <!--ROW B-->
+              <input type="text" maxlength="1" onkeypress="return isNumberKey(event)" class="inputBox col-4" id="H1" onchange="textInputColor()">
+              <input type="text" maxlength="1" onkeypress="return isNumberKey(event)" class="inputBox col-4" id="H2" onchange="textInputColor()">
+              <input type="text" maxlength="1" onkeypress="return isNumberKey(event)" class="inputBox col-4" id="H3" onchange="textInputColor()">
+            </div>
+            <div class="rowC row">
+              <!--ROW C-->
+              <input type="text" maxlength="1" onkeypress="return isNumberKey(event)" class="inputBox col-4" id="I1" onchange="textInputColor()">
+              <input type="text" maxlength="1" onkeypress="return isNumberKey(event)" class="inputBox col-4" id="I2" onchange="textInputColor()">
+              <input type="text" maxlength="1" onkeypress="return isNumberKey(event)" class="inputBox col-4" id="I3" onchange="textInputColor()">
+            </div>
+          </div>
+        </div>
+        <!--BOX 2-->
+        <div class="col-4">
+          <div class="SecondaryBox boxTopLeft topBox container-fluid">
+            <!--ROW A-->
+            <div class="rowA row">
+              <input type="text" maxlength="1" onkeypress="return isNumberKey(event)" class="inputBox col-4" id="G4" onchange="textInputColor()">
+              <input type="text" maxlength="1" onkeypress="return isNumberKey(event)" class="inputBox col-4" id="G5" onchange="textInputColor()">
+              <input type="text" maxlength="1" onkeypress="return isNumberKey(event)" class="inputBox col-4" id="G6" onchange="textInputColor()">
+            </div>
+            <div class="rowB row">
+              <!--ROW B-->
+              <input type="text" maxlength="1" onkeypress="return isNumberKey(event)" class="inputBox col-4" id="H4" onchange="textInputColor()">
+              <input type="text" maxlength="1" onkeypress="return isNumberKey(event)" class="inputBox col-4" id="H5" onchange="textInputColor()">
+              <input type="text" maxlength="1" onkeypress="return isNumberKey(event)" class="inputBox col-4" id="H6" onchange="textInputColor()">
+            </div>
+            <div class="rowC row">
+              <!--ROW C-->
+              <input type="text" maxlength="1" onkeypress="return isNumberKey(event)" class="inputBox col-4" id="I4" onchange="textInputColor()">
+              <input type="text" maxlength="1" onkeypress="return isNumberKey(event)" class="inputBox col-4" id="I5" onchange="textInputColor()">
+              <input type="text" maxlength="1" onkeypress="return isNumberKey(event)" class="inputBox col-4" id="I6" onchange="textInputColor()">
+            </div>
+          </div>
+        </div>
+        <!--BOX 3-->
+        <div class="col-4">
+          <div class="SecondaryBox boxTopLeft topBox container-fluid">
+            <!--ROW A-->
+            <div class="rowA row">
+              <input type="text" maxlength="1" onkeypress="return isNumberKey(event)" class="inputBox col-4" id="G7" onchange="textInputColor()">
+              <input type="text" maxlength="1" onkeypress="return isNumberKey(event)" class="inputBox col-4" id="G8" onchange="textInputColor()">
+              <input type="text" maxlength="1" onkeypress="return isNumberKey(event)" class="inputBox col-4" id="G9" onchange="textInputColor()">
+            </div>
+            <div class="rowB row">
+              <!--ROW B-->
+              <input type="text" maxlength="1" onkeypress="return isNumberKey(event)" class="inputBox col-4" id="H7" onchange="textInputColor()">
+              <input type="text" maxlength="1" onkeypress="return isNumberKey(event)" class="inputBox col-4" id="H8" onchange="textInputColor()">
+              <input type="text" maxlength="1" onkeypress="return isNumberKey(event)" class="inputBox col-4" id="H9" onchange="textInputColor()">
+            </div>
+            <div class="rowC row">
+              <!--ROW C-->
+              <input type="text" maxlength="1" onkeypress="return isNumberKey(event)" class="inputBox col-4" id="I7" onchange="textInputColor()">
+              <input type="text" maxlength="1" onkeypress="return isNumberKey(event)" class="inputBox col-4" id="I8" onchange="textInputColor()">
+              <input type="text" maxlength="1" onkeypress="return isNumberKey(event)" class="inputBox col-4" id="I9" onchange="textInputColor()">
+            </div>
+          </div>
+        </div>
+        <!--END OF BOXES BOTTOM ROW=====================-->
+      </div>
+
+
+    </div>
+  </div>
+  <!--sudoku controls-->
+  <div class="container-fluid">
+    <div class="row justify-content-center btnsRow">
+      <button type="button" class="btn btn-warning btnleft" onclick="refreshLevel()">New Level</button>
+      <button type="button" class="btn btn-warning" onclick="submitLevel()">Submit Level</button>
+    </div>
+    <div class="row justify-content-center">
+      <div class="dropdown">
+        <button class="btn btn-warning dropdown-toggle dropdownDifficulty" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Difficulty
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+          <button class="dropdown-item dropdownDifficultyOptions" type="button" onclick="difficultyManager(0)">Full Grid</button>
+          <button class="dropdown-item dropdownDifficultyOptions" type="button" onclick="difficultyManager(1)">Easy</button>
+          <button class="dropdown-item dropdownDifficultyOptions" type="button" onclick="difficultyManager(2)">Medium</button>
+          <button class="dropdown-item dropdownDifficultyOptions" type="button" onclick="difficultyManager(3)">Hard</button>
+          <button class="dropdown-item dropdownDifficultyOptions" type="button" onclick="difficultyManager(4)">For Robots</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <tbody id="sudoku-board"></tbody>
+</body>
+
+<footer>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="app3.js" charset="utf-8"></script>
+</footer>
+
+</html>

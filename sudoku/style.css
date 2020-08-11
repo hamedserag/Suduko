@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #373737;
+}
+
+/*grid view styling*/
+.SudokuMainContainer {
+  height: 600px;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.boxesHolder {
+  background-color: #fff;
+  height: 608px;
+  width: 600px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 4px solid #000;
+}
+
+.SecondaryBox {
+  width: 200px;
+  height: 200px;
+  border: 2px solid black;
+}
+
+.inputBox {
+  height: 66px;
+}
+
+.boxesRow {
+  position: relative;
+  left: -16.5px;
+}
+
+/*page styling*/
+.btnleft {
+  margin-right: 300px;
+}
+
+.btnsRow {
+  margin-top: 20px;
+}
+
+.btn {
+  width: 150px;
+}
+
+.inputBox {
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.dropdownDifficulty {
+  margin-top: -65px;
+  width: 150px;
+}
+
+.dropdownDifficultyOptions {
+  width: 150px;
+}
+
+/*banners styling*/
+.bannerImg {
+  width: 400px;
+  height: 100px;
+  margin-bottom: -40px;
+}
+
+/*hide arrows of text input*/
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
